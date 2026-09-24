@@ -1,7 +1,7 @@
 export const site = {
   name: "Juan Ponce",
   url: "https://juanponcelu.com",
-  email: "me.juanponce@gmail.com",
+  email: "contacto@juanponcelu.com",
   title: "Juan Ponce — Software, producto y automatización",
   description:
     "Portafolio de Juan Ponce: automatización de ops, Beekonz FBT para VR y agentes Telegram/Cursor. Trabajo técnico, claro y cercano.",
