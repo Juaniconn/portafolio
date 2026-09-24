@@ -8,7 +8,7 @@ export function Footer() {
         <p>
           © {year} {site.name}
         </p>
-        <p className="font-[family-name:var(--font-mono)] text-xs">
+        <p className="font-[family-name:var(--font-ui)] text-xs font-bold uppercase tracking-wide">
           {site.url.replace("https://", "")}
         </p>
       </div>

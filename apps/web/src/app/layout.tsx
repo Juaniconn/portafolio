@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
-import { Syne, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import { Abril_Fatface, Heebo, Mulish } from "next/font/google";
 import { site } from "@/lib/content";
 import "./globals.css";
 
-const syne = Syne({
-  variable: "--font-syne",
+const abril = Abril_Fatface({
+  variable: "--font-abril",
   subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
+  weight: "400",
 });
 
-const ibmPlexSans = IBM_Plex_Sans({
-  variable: "--font-ibm-plex-sans",
+const heebo = Heebo({
+  variable: "--font-heebo",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
-  variable: "--font-ibm-plex-mono",
+const mulish = Mulish({
+  variable: "--font-mulish",
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -46,7 +46,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="es"
-      className={`${syne.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable} h-full antialiased`}
+      className={`${abril.variable} ${heebo.variable} ${mulish.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-bg text-fg">{children}</body>
     </html>

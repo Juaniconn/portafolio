@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #11110f;
-  --bg-elevated: #1a1916;
-  --fg: #f2efe8;
-  --muted: #9a958a;
-  --accent: #5ec8c0;
-  --accent-dim: #3a9e97;
-  --line: rgba(242, 239, 232, 0.14);
-  --mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  --bg: #f2f7fc;
+  --bg-elevated: #ffffff;
+  --fg: #213757;
+  --muted: #5d6c7b;
+  --accent: #006aff;
+  --accent-dim: #0056d6;
+  --line: rgba(33, 55, 87, 0.12);
+  --soft: #e8f1fb;
 }
 
 @theme inline {
@@ -19,9 +19,10 @@
   --color-accent: var(--accent);
   --color-accent-dim: var(--accent-dim);
   --color-line: var(--line);
-  --font-display: var(--font-syne);
-  --font-body: var(--font-ibm-plex-sans);
-  --font-mono: var(--font-ibm-plex-mono);
+  --color-soft: var(--soft);
+  --font-display: var(--font-abril);
+  --font-body: var(--font-heebo);
+  --font-ui: var(--font-mulish);
 }
 
 html {
@@ -54,7 +55,7 @@ body {
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--accent) 40%, transparent);
+  background: color-mix(in srgb, var(--accent) 28%, transparent);
   color: var(--fg);
 }
 
@@ -66,7 +67,7 @@ body {
 @keyframes hero-enter {
   from {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(14px);
   }
   to {
     opacity: 1;
@@ -75,19 +76,19 @@ body {
 }
 
 .hero-enter {
-  animation: hero-enter 0.7s ease-out both;
+  animation: hero-enter 0.65s ease-out both;
 }
 
 .hero-enter-delay {
-  animation-delay: 0.12s;
+  animation-delay: 0.1s;
 }
 
 .hero-enter-delay-2 {
-  animation-delay: 0.24s;
+  animation-delay: 0.2s;
 }
 
 .hero-enter-delay-3 {
-  animation-delay: 0.36s;
+  animation-delay: 0.3s;
 }
 
 .link-underline {
@@ -95,10 +96,10 @@ body {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
-  background-size: 0 1px;
+  background-size: 0 1.5px;
   transition: background-size 0.25s ease;
 }
 
 .link-underline:hover {
-  background-size: 100% 1px;
+  background-size: 100% 1.5px;
 }

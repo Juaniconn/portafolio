@@ -8,7 +8,10 @@ export function About() {
     >
       <div className="mx-auto grid max-w-6xl gap-14 px-6 md:grid-cols-[1.25fr_1fr]">
         <div>
-          <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold tracking-tight md:text-4xl">
+          <p className="font-[family-name:var(--font-ui)] text-xs font-extrabold uppercase tracking-[0.2em] text-accent">
+            About.
+          </p>
+          <h2 className="mt-3 font-[family-name:var(--font-display)] text-4xl tracking-tight text-fg md:text-5xl">
             Sobre mí
           </h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-muted md:text-lg">
@@ -17,15 +20,15 @@ export function About() {
             ))}
           </div>
         </div>
-        <div>
-          <h3 className="font-[family-name:var(--font-display)] text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+        <div className="rounded-3xl border border-line bg-bg-elevated p-8">
+          <h3 className="font-[family-name:var(--font-ui)] text-xs font-extrabold uppercase tracking-[0.18em] text-accent">
             Skills
           </h3>
           <dl className="mt-6 space-y-5">
             {Object.entries(skills).map(([group, items]) => (
               <div key={group}>
-                <dt className="text-sm font-medium text-fg">{group}</dt>
-                <dd className="mt-1.5 font-[family-name:var(--font-mono)] text-sm leading-relaxed text-muted">
+                <dt className="text-sm font-semibold text-fg">{group}</dt>
+                <dd className="mt-1.5 text-sm leading-relaxed text-muted">
                   {items.join(" · ")}
                 </dd>
               </div>

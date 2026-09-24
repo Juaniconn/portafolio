@@ -1,17 +1,20 @@
 export const site = {
   name: "Juan Ponce",
+  shortName: "Juan.",
   url: "https://juanponcelu.com",
   email: "contacto@juanponcelu.com",
   title: "Juan Ponce — Software, producto y automatización",
   description:
     "Portafolio de Juan Ponce: automatización de ops, Beekonz FBT para VR y agentes Telegram/Cursor. Trabajo técnico, claro y cercano.",
+  role: "Software, producto y automatización",
   headline: "Software, producto y automatización con criterio técnico.",
   subhead:
     "Diseño y construyo sistemas que operan solos: ops, hardware VR y agentes en Telegram/Discord. Menos ceremony, más entrega.",
 };
 
 export const nav = [
-  { href: "#proyectos", label: "Proyectos" },
+  { href: "#proyectos", label: "Works" },
+  { href: "#que-hago", label: "Qué hago" },
   { href: "#sobre-mi", label: "Sobre mí" },
   { href: "#contacto", label: "Contacto" },
 ] as const;
@@ -41,18 +44,9 @@ export const projects = [
 ] as const;
 
 export const skills = {
-  "Producto / systems": [
-    "Discovery",
-    "Docs vivos",
-    "MVP → iterate",
-  ],
+  "Producto / systems": ["Discovery", "Docs vivos", "MVP → iterate"],
   Software: ["TypeScript", "Next.js", "Python", "APIs", "Static export"],
-  Automatización: [
-    "Scripts",
-    "Bots",
-    "cron / systemd",
-    "Discord / Telegram",
-  ],
+  Automatización: ["Scripts", "Bots", "cron / systemd", "Discord / Telegram"],
   "Hardware / XR": ["FBT", "Sensores", "VRChat / SlimeVR"],
 } as const;
 
@@ -60,6 +54,17 @@ export const about = [
   "Trabajo en la intersección de producto y sistemas: entender el flujo, recortar lo innecesario y dejar algo que alguien más pueda operar.",
   "He pasado por automatización de operaciones (AMD), hardware/software FBT para VR (Beekonz) y agentes que conectan chat con herramientas reales (Telegram ↔ Cursor).",
   "Si buscas alguien que hable claro, implemente y no se esconda detrás de decks, hablemos.",
+] as const;
+
+export const services = [
+  {
+    title: "Producto & systems",
+    body: "Clarifico el flujo, corto lo innecesario y dejo un sistema que alguien más pueda operar sin theatre.",
+  },
+  {
+    title: "Build & automatización",
+    body: "Web, bots, agentes y ops: de la idea al deploy. TypeScript, Python, Telegram/Cursor, hosting real.",
+  },
 ] as const;
 
 export const contactLead =
