@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+*.tmp
+.env
+.env.*
+!.env.example
+.venv/
+node_modules/
+.next/
+out/
+dist/
+*.log
