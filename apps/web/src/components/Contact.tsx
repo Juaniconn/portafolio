@@ -1,4 +1,4 @@
-import { site } from "@/lib/content";
+import { contactLead, site } from "@/lib/content";
 
 export function Contact() {
   return (
@@ -8,7 +8,7 @@ export function Contact() {
           Contacto
         </h2>
         <p className="mt-4 max-w-xl text-lg text-muted">
-          ¿Hablamos de un proyecto? Escríbeme y te respondo.
+          {contactLead}
         </p>
         <a
           href={`mailto:${site.email}`}

@@ -2,12 +2,12 @@ export const site = {
   name: "Juan Ponce",
   url: "https://juanponcelu.com",
   email: "me.juanponce@gmail.com",
-  title: "Juan Ponce — Software, automatización y producto",
+  title: "Juan Ponce — Software, producto y automatización",
   description:
-    "Portafolio de Juan Ponce. Software web, automatización y sistemas de producto.",
-  headline: "Software, automatización y producto — hechos para usarse.",
+    "Portafolio de Juan Ponce: automatización de ops, Beekonz FBT para VR y agentes Telegram/Cursor. Trabajo técnico, claro y cercano.",
+  headline: "Software, producto y automatización con criterio técnico.",
   subhead:
-    "Diseño e implemento sistemas web, bots y flujos operativos. De la idea al deploy.",
+    "Diseño y construyo sistemas que operan solos: ops, hardware VR y agentes en Telegram/Discord. Menos ceremony, más entrega.",
 };
 
 export const nav = [
@@ -18,35 +18,49 @@ export const nav = [
 
 export const projects = [
   {
-    title: "Beekonz",
+    title: "Beekonz — FBT para VR",
     blurb:
-      "Tienda FBT/VR para la comunidad hispana: Next estático, Stripe y deploy en Hostinger.",
+      "Trackers y tienda para full-body tracking en VRChat/SlimeVR: shop, pagos y fulfillment.",
     href: "https://beekonz.shop",
-    tags: ["Next.js", "Stripe", "Hostinger"],
+    tags: ["VR", "Hardware", "Next.js", "E-commerce"],
   },
   {
-    title: "AMD / automatización",
+    title: "AMD — Ops y automatización",
     blurb:
-      "Herramientas y flujos operativos para operaciones: web, docs y automatización de procesos.",
+      "Flujos, tooling y documentación operativa para reducir trabajo manual y errores en el día a día.",
     href: "#contacto",
-    tags: ["Ops", "Web", "Automatización"],
+    tags: ["Ops", "Automatización", "Product"],
   },
   {
-    title: "Cursor–Telegram agent",
+    title: "Agent Telegram ↔ Cursor",
     blurb:
-      "Bridge para chatear con el agente de Cursor desde Telegram, con recordatorios y archivos.",
+      "Bot que lleva conversaciones de Telegram al agente de Cursor y devuelve resultados, archivos y recordatorios.",
     href: "https://github.com/Juaniconn",
-    tags: ["Python", "Telegram", "Agents"],
+    tags: ["Agents", "Telegram", "Automation"],
   },
 ] as const;
 
 export const skills = {
-  Web: ["TypeScript", "React / Next", "Tailwind"],
-  Automatización: ["Python", "Bots & APIs", "Agentes"],
-  "Producto / ops": ["Deploy Hostinger", "Obsidian", "Shipping iterativo"],
+  "Producto / systems": [
+    "Discovery",
+    "Docs vivos",
+    "MVP → iterate",
+  ],
+  Software: ["TypeScript", "Next.js", "Python", "APIs", "Static export"],
+  Automatización: [
+    "Scripts",
+    "Bots",
+    "cron / systemd",
+    "Discord / Telegram",
+  ],
+  "Hardware / XR": ["FBT", "Sensores", "VRChat / SlimeVR"],
 } as const;
 
 export const about = [
-  "Trabajo en la intersección de producto, ingeniería y operaciones: apps web, automatización (APIs, Discord/Telegram, agentes) y marcas digitales que necesitan shipping real.",
-  "Me interesa la claridad — menos theatre, más sistemas que se entienden y se mantienen.",
+  "Trabajo en la intersección de producto y sistemas: entender el flujo, recortar lo innecesario y dejar algo que alguien más pueda operar.",
+  "He pasado por automatización de operaciones (AMD), hardware/software FBT para VR (Beekonz) y agentes que conectan chat con herramientas reales (Telegram ↔ Cursor).",
+  "Si buscas alguien que hable claro, implemente y no se esconda detrás de decks, hablemos.",
 ] as const;
+
+export const contactLead =
+  "¿Tienes un problema feo o un producto a mitad? Cuéntame en una frase qué duele. Respondo por mail.";

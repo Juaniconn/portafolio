@@ -12,8 +12,8 @@ export function Hero() {
         style={{
           background: `
             radial-gradient(ellipse 80% 55% at 70% 15%, var(--glow), transparent 55%),
-            radial-gradient(ellipse 50% 40% at 10% 80%, rgba(15, 118, 110, 0.25), transparent 50%),
-            linear-gradient(180deg, #0c0f12 0%, #0a1014 45%, #0c0f12 100%)
+            radial-gradient(ellipse 50% 40% at 10% 80%, rgba(26, 154, 106, 0.22), transparent 50%),
+            linear-gradient(180deg, #0b1220 0%, #0a1018 45%, #0b1220 100%)
           `,
         }}
       />
