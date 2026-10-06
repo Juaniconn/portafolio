@@ -41,7 +41,7 @@ npm run build
 
 echo "Sync out/ → $HOST:$REMOTE_DIR"
 export SSHPASS="$HOSTINGER_JUANPONCELU_SSH_PASSWORD"
-sshpass -e rsync -rlptz --delete "${DRY_FLAG[@]}" \
+sshpass -e rsync -rlptz --chmod=D755,F644 --delete "${DRY_FLAG[@]}" \
   -e "ssh -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$KNOWN -p $PORT" \
   out/ \
   "$HOSTINGER_JUANPONCELU_SSH_USER@$HOST:$REMOTE_DIR/"
