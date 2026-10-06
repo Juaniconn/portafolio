@@ -8,7 +8,7 @@ Repo: `git@github.com:Juaniconn/portafolio.git`
 | Ruta | Qué es |
 |------|--------|
 | `apps/web` | Portafolio estático (Next.js export → Hostinger) |
-| `apps/hq` | Dashboard personal (local → VPS / `hq.juanponcelu.com`) |
+| `apps/hq` | Obsoleto: el dashboard vive en su propio repo `/srv/personal/dashboard` (`web.juanponcelu.com`) |
 | `docs/` | Notas Obsidian (brief, deploy, roadmap HQ) |
 
 ## Dev — sitio público
@@ -21,7 +21,7 @@ npm run dev
 
 ## Deploy Hostinger
 
-1. Copia `.env.example` → `.env` y completa SSH de `juanponcelu.com`
-2. `cd apps/web && ./deploy.sh`
+1. Credenciales SSH de `juanponcelu.com` en `~/.secrets/hostinger-juanponcelu.env` (600; formato en `.env.example`)
+2. `cd apps/web && ./deploy.sh --dry-run` y luego `./deploy.sh`
 
 Detalle: [docs/SOP-Deploy.md](docs/SOP-Deploy.md)
